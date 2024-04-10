@@ -11,6 +11,10 @@ export class Config {
   * @param config - Config screen sizes for delta calculation in format ['orientation@widthxheight'].
   * Where orientation is 'portrait' or 'landscape'.
   * Default value is ['portrait@360x540', 'landscape@960x540']
+  * @throws {Error} Config is not defined
+  * @throws {Error} Config item is not valid
+  * @throws {Error} Config for orientation not found
+  * @throws {Error} window is not defined
   */
   constructor (config: string[] = ['portrait@360x540', 'landscape@960x540']) {
     // Verify the existence of the window object
