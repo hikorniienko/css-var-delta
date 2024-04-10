@@ -39,6 +39,10 @@ export default class CssVarDelta extends Config {
     const delta = Math.min(width / currentConfig.width, height / currentConfig.height)
 
     document.documentElement.style.setProperty('--delta', delta.toString())
+    const result = document.querySelector('.result')
+    if (result !== null) {
+      result.innerHTML = `delta: ${delta}, orientation: ${orientation}, currentConfig: ${JSON.stringify(currentConfig)}`
+    }
 
     // TODO: Fix open keyboard on mobile
     // TODO: Fix change orientation on mobile
