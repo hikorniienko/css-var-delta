@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>CSS var delta</title>
-    </head>
-    <body></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS var delta</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      .box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: green solid 4px;
+        background-color: yellow;
+
+        width: calc(var(--delta, 1) * 360px);
+        height: calc(var(--delta, 1) * 540px);
+      }
+
+      .box__title {
+        font-size: calc(var(--delta, 1) * 24px);
+        text-align: center;
+        padding: calc(var(--delta, 1) * 8px);
+        background-color: pink;
+      }
+    </style>
+    <div class="box">
+      <div class="box__title">Test CSS var delta</div>
+      <input value="Test keyboard input" />
+    </div>
+  </body>
 </html>
