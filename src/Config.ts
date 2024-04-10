@@ -9,8 +9,8 @@ export class Config {
   /**
   * Constructor
   * @param config - Config screen sizes for delta calculation in format ['orientation@widthxheight'].
-  *  Where orientation is 'portrait' or 'landscape'.
-  *  Default value is ['portrait@360x540', 'landscape@960x540']
+  * Where orientation is 'portrait' or 'landscape'.
+  * Default value is ['portrait@360x540', 'landscape@960x540']
   */
   constructor (config: string[] = ['portrait@360x540', 'landscape@960x540']) {
     // Verify the existence of the window object

@@ -3,14 +3,14 @@ import { Config } from './Config'
 /**
  * CSS Variable Delta
  * @description Library for calculating the delta of the screen size and setting it as a CSS variable.
- *  Extremely useful for web games and responsive design.
+ * Extremely useful for web games and responsive design.
  */
 export default class CssVarDelta extends Config {
   /**
    * Constructor
    * @param config - Config screen sizes for delta calculation in format ['orientation@widthxheight'].
-   *  Where orientation is 'portrait' or 'landscape'.
-   *  Default value is ['portrait@360x540', 'landscape@960x540']
+   * Where orientation is 'portrait' or 'landscape'.
+   * Default value is ['portrait@360x540', 'landscape@960x540']
    */
   constructor (config: string[]) {
     super(config)
