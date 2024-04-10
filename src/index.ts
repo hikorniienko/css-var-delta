@@ -14,6 +14,7 @@ export default class CssVarDelta extends Config {
    */
   constructor (config: string[]) {
     super(config)
+
     // Create a resize event listener and calculate the delta
     window.addEventListener('resize', this._onResize)
     this._onResize()
