@@ -18,10 +18,18 @@ export class Config {
       throw new Error('CssVarDelta: window is not defined')
     }
 
-    // Verify the existence of the config
+    // Checking the config for compliance
     if (!Array.isArray(config) || config.length === 0) {
       throw new Error('CssVarDelta: Config is not defined')
     }
+
+    // Validate the config
+    config.forEach((item) => {
+      const regex = /^(portrait|landscape)@(\d{3,6})x(\d{3,6})$/
+      if (!regex.test(item)) {
+        throw new Error(`CssVarDelta: Config item ${item} is not valid`)
+      }
+    })
 
     // Parse the config
     const parseConfig: ConfigType = {
