@@ -36,11 +36,13 @@ new CssVarDelta(
 
 #### config 
 `string[]` `['portrait@360x540', 'landscape@960x540']` *`required`*
+
 Config screen sizes for delta calculation in format **orientation@widthxheight**.
 Where orientation is 'portrait' or 'landscape'.
 
 #### debug 
 `boolean` `false`
+
 Debug mode, display delta, orientation, and current config in the console.
 
 ### Methods
