@@ -17,7 +17,7 @@ Extremely useful for web games and responsive design.
 </script>
 ```
 
-### Manual Install
+### NPM Install
 
 ```bash
 npm install css-var-delta
@@ -25,29 +25,7 @@ npm install css-var-delta
 
 ```js
 import CssVarDelta from 'css-var-delta';
-```
 
-<details>
-<summary>
-In the browser
-</summary>
-
-You need build this repo.
-
-```js
-<script src="/path/to/index.js"></script>
-<script>
-  new CssVarDelta.default(
-      ["portrait@360x540", "landscape@960x540"],
-      false
-  );
-</script>
-```
-</details>
-
-### Basic Usage Example
-
-```js
 new CssVarDelta(
   ["portrait@360x540", "landscape@960x540"],
   false
@@ -56,11 +34,13 @@ new CssVarDelta(
 
 ### Options
 
-#### config `string[]` `['portrait@360x540', 'landscape@960x540']` *`required`*
+#### config 
+`string[]` `['portrait@360x540', 'landscape@960x540']` *`required`*
 Config screen sizes for delta calculation in format **orientation@widthxheight**.
 Where orientation is 'portrait' or 'landscape'.
 
-#### debug `boolean` `false`
+#### debug 
+`boolean` `false`
 Debug mode, display delta, orientation, and current config in the console.
 
 ### Methods
