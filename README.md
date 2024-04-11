@@ -40,7 +40,10 @@ new CssVarDelta(
 Config screen sizes for delta calculation in format ['orientation@widthxheight'].
 Where orientation is 'portrait' or 'landscape'.
 
+#### debug `boolean` `false`
+Debug mode, display delta, orientation, and current config in the console.
+
 ## Methods
 
 #### destroy()
-Remove resize event listener and delta CSS variable
+Remove resize event listener and delta CSS variable.
