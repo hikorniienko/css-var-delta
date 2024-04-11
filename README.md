@@ -3,19 +3,21 @@
 CSS Variable Delta - Library for calculating the delta of the screen size and setting it as a CSS variable.
 Extremely useful for web games and responsive design.
 
+[Demo](https://hikorniienko.github.io/css-var-delta/)
+
 ### In the browser
 
 ```js
 <script src="/path/to/index.js"></script>
 <script>
-new CssVarDelta.default(
-    ["portrait@360x540", "landscape@960x540"],
-    false
-);
+  new CssVarDelta.default(
+      ["portrait@360x540", "landscape@960x540"],
+      false
+  );
 </script>
 ```
 
-### NPM Install
+### Manual Install
 
 ```bash
 npm install css-var-delta
@@ -25,12 +27,30 @@ npm install css-var-delta
 import CssVarDelta from 'css-var-delta';
 ```
 
+<details>
+<summary>
+In the browser
+</summary>
+
+You need build this repo.
+
+```js
+<script src="/path/to/index.js"></script>
+<script>
+  new CssVarDelta.default(
+      ["portrait@360x540", "landscape@960x540"],
+      false
+  );
+</script>
+```
+</details>
+
 ### Basic Usage Example
 
 ```js
 new CssVarDelta(
-    ["portrait@360x540", "landscape@960x540"],
-    false
+  ["portrait@360x540", "landscape@960x540"],
+  false
 );
 ```
 
