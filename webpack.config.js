@@ -13,8 +13,12 @@ module.exports = {
     ],
   },
   output: {
-    filename: "css-var-delta.js",
     path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
+    library: {
+      name: "CssVarDelta",
+      type: "umd",
+    },
     clean: true,
   },
   devServer: {
@@ -27,7 +31,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
-      inject: "head",
+      inject: false,
     }),
   ],
   optimization: {

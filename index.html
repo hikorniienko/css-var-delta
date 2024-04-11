@@ -2,17 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>CSS var delta</title>
-  </head>
-  <body>
+    <script src="/index.js"></script>
+    <script>
+      new CssVarDelta.default(
+        ["portrait@360x540", "landscape@960x540"],
+        true
+      );
+    </script>
+
     <style>
       * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
       }
-      
+
       .box {
         position: absolute;
         left: 50%;
@@ -32,8 +41,10 @@
         background-color: pink;
       }
     </style>
+  </head>
+  <body>
     <div class="box">
-      <div class="box__title">Test CSS var delta</div>
+      <div class="box__title">Test CSS variable delta</div>
       <input value="Test keyboard input" />
     </div>
   </body>

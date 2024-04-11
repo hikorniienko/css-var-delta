@@ -2,7 +2,7 @@
   "name": "css-var-delta",
   "version": "1.0.0",
   "description": "A versatile tool for generating CSS variables with dynamic deltas, facilitating responsive design and layout adjustments.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "webpack serve --live-reload --mode development",
     "build": "webpack --mode production",
@@ -20,7 +20,7 @@
     "responsive",
     "layout"
   ],
-  "author": "Vladyslav Korniienko",
+  "author": "Vladyslav Korniienko<hi.kornienko@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hikorniienko/css-var-delta/issues"

@@ -5,7 +5,7 @@ import { Config } from './Config'
  * @description Library for calculating the delta of the screen size and setting it as a CSS variable.
  * Extremely useful for web games and responsive design.
  */
-class CssVarDelta extends Config {
+export default class CssVarDelta extends Config {
   /**
    * Debug mode, display delta, orientation, and current config in the console
    */
@@ -67,9 +67,3 @@ class CssVarDelta extends Config {
     document.documentElement.style.removeProperty('--delta')
   }
 }
-
-module.exports = CssVarDelta
-
-const cssVarDelta = new CssVarDelta(['portrait@360x540', 'landscape@960x540', 'portrait@500x540'], true)
-console.log(cssVarDelta)
-// cssVarDelta.destroy()
