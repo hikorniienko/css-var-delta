@@ -3,9 +3,9 @@
   "version": "1.0.7",
   "description": "A versatile tool for generating CSS variables with dynamic deltas, facilitating responsive design and layout adjustments.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/index.js",
-    "types"
+    "dist/*.(js|d.ts)"
   ],
   "scripts": {
     "dev": "webpack serve --live-reload --mode development",
