@@ -5,14 +5,6 @@ Extremely useful for web games and responsive design.
 
 [Demo](https://hikorniienko.github.io/css-var-delta/)
 
-* [Install](#install)
-  * [cdn](#cdn)
-  * [npm](#npm)
-* [How to use](#how-to-use)
-* [Core](#core)
-  * [Options](#options)
-  * [Methods](#methods)
-
 ## Install
 
 ### cdn
@@ -43,6 +35,28 @@ new CssVarDelta(
 ```
 
 ## How to use
+
+After initialization, the variable `--delta` will be added to the root document. Just multiply `--delta` by px or other dimensions.
+
+### css
+
+```css
+.box {
+  background-color: yellow;
+  width: calc(var(--delta, 1) * 100px);
+  height: calc(var(--delta, 1) * 100px);
+}
+```
+
+### scss
+
+```css
+.box {
+  background-color: yellow;
+  width: calc(var(--delta, 1) * 100px);
+  height: calc(var(--delta, 1) * 100px);
+}
+```
 
 ## Core
 
