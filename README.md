@@ -3,7 +3,7 @@
 CSS Variable Delta - Library for calculating the delta of the screen size and setting it as a CSS variable.
 Extremely useful for web games and responsive design.
 
-[Demo](https://hikorniienko.github.io/css-var-delta/){:target="_blank"}
+[Demo](https://hikorniienko.github.io/css-var-delta/)
 
 ## Install
 
