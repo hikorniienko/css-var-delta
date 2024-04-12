@@ -11,8 +11,7 @@
     "dev": "webpack serve --live-reload --mode development",
     "build": "webpack --mode production",
     "clean": "rm -rf dist",
-    "lint": "npx eslint ./src/ --ext .ts",
-    "publish": "npm run build && npm version patch && npm publish"
+    "lint": "npx eslint ./src/ --ext .ts"
   },
   "repository": {
     "type": "git",
