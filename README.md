@@ -51,10 +51,16 @@ After initialization, the variable `--delta` will be added to the root document.
 ### scss
 
 ```css
+@use 'sass:math';
+
+@function cvd($pixels) {
+    @return calc(var(--delta, 1) * #{$pixels + px});
+}
+
 .box {
   background-color: yellow;
-  width: calc(var(--delta, 1) * 100px);
-  height: calc(var(--delta, 1) * 100px);
+  width: cvd(100);
+  height: cvd(100);
 }
 ```
 
@@ -63,7 +69,7 @@ After initialization, the variable `--delta` will be added to the root document.
 ### Options
 
 #### config 
-`string[]` `['portrait@360x540', 'landscape@960x540']` *`required`*
+`string[]` `['portrait@360x540', 'landscape@960x540']`
 
 Config screen sizes for delta calculation in format **orientation@widthxheight**.
 Where orientation is 'portrait' or 'landscape'.
