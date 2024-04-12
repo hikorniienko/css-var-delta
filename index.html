@@ -9,10 +9,7 @@
     <title>CSS var delta</title>
     <script src="./index.js"></script>
     <script>
-      new CssVarDelta.default(
-        ["portrait@360x540", "landscape@960x540"],
-        true
-      );
+      new CssVarDelta.default(["portrait@360x540", "landscape@960x540"], true);
     </script>
 
     <style>
@@ -20,6 +17,11 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: monospace;
+      }
+
+      p {
+        margin-top: calc(var(--delta, 1) * 16px);
       }
 
       .box {
@@ -27,24 +29,35 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         border: green solid 4px;
-        background-color: yellow;
+        background-color: pink;
+
         width: calc(var(--delta, 1) * 360px);
         height: calc(var(--delta, 1) * 540px);
-      }
 
-      .box__title {
+        color: rgb(24, 24, 24);
+        text-align: center;
         font-size: calc(var(--delta, 1) * 24px);
         padding: calc(var(--delta, 1) * 8px);
-        text-align: center;
-        background-color: pink;
+      }
+
+      .link {
+        color: rgb(223, 223, 223);
+        background-color: rgb(24, 24, 24);
+        padding: calc(var(--delta, 1) * 8px);
+        margin-top: calc(var(--delta, 1) * 32px);
       }
     </style>
   </head>
   <body>
     <div class="box">
-      <div class="box__title">Test CSS variable delta</div>
-      <input value="Test keyboard input" />
+      <p>This is a test for CSS variable delta.</p>
+      <p>Resize the window to see the effect.</p>
+      <a class="link" href="https://github.com/hikorniienko/css-var-delta">Documentation</a>
     </div>
   </body>
 </html>

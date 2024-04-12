@@ -29,7 +29,7 @@ npm install css-var-delta
 import CssVarDelta from 'css-var-delta';
 
 new CssVarDelta(
-  ["portrait@360x540", "landscape@960x540"],
+  ['portrait@360x540', 'landscape@960x540'],
   false
 );
 ```
