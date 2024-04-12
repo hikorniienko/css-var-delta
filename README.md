@@ -9,7 +9,7 @@ Extremely useful for web games and responsive design.
 
 ### cdn
 
-```js
+```html
 <script src="https://cdn.jsdelivr.net/npm/css-var-delta@1.0.11/dist/index.js"></script>
 <script>
   new CssVarDelta.default(
