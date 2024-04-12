@@ -9,7 +9,7 @@ export default class CssVarDelta extends Config {
   /**
    * Debug mode, display delta, orientation, and current config in the console
    */
-  debug: boolean
+  protected readonly debug: boolean
 
   /**
    * Constructor
