@@ -1,6 +1,6 @@
 {
   "name": "css-var-delta",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A versatile tool for generating CSS variables with dynamic deltas, facilitating responsive design and layout adjustments.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
