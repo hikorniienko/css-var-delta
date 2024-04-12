@@ -5,7 +5,17 @@ Extremely useful for web games and responsive design.
 
 [Demo](https://hikorniienko.github.io/css-var-delta/)
 
-### In the browser
+* [Install](#install)
+  * [cdn](#cdn)
+  * [npm](#npm)
+* [How to use](#how-to-use)
+* [Core](#core)
+  * [Options](#options)
+  * [Methods](#methods)
+
+## Install
+
+### cdn
 
 ```js
 <script src="/path/to/index.js"></script>
@@ -17,7 +27,7 @@ Extremely useful for web games and responsive design.
 </script>
 ```
 
-### NPM Install
+### npm
 
 ```bash
 npm install css-var-delta
@@ -31,6 +41,10 @@ new CssVarDelta(
   false
 );
 ```
+
+## How to use
+
+## Core
 
 ### Options
 
