@@ -1,6 +1,6 @@
 {
   "name": "css-var-delta",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Library for calculating the delta of the screen size and setting it as a CSS variable. Extremely useful for web games and responsive design.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
